@@ -8,11 +8,11 @@ import {quote} from './quote'
 })
 export class AppComponent {
 quotes = [
-  new quote(1, 'aaaaabbbbbb'),
-  new quote(2, 'cccccbbbbbb'),
-  new quote(3, 'ddddddabbbbbb'),
-  new quote(4, 'eeeeeeeabbbbbb'),
-  new quote(5, 'fffffffbbbbbb'),
-  new quote(6, 'ggggggggbbbbbb'),
+  new quote(1, 'aaaaabbbbbb','aaaaaa'),
+  new quote(2, 'cccccbbbbbb','aaaaaaa'),
+  new quote(3, 'ddddddabbbbbb','aaaaaaa'),
+  new quote(4, 'eeeeeeeabbbbbb','aaaaaaaa'),
+  new quote(5, 'fffffffbbbbbb','aaaaaaaa'),
+  new quote(6, 'ggggggggbbbbbb','aaaaaaaa'),
   ]
 }

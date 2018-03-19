@@ -16,6 +16,10 @@ export class QuoteComponent implements OnInit {
     new quote(5, 'fffffffbbbbbb','aaaaaaaa'),
     new quote(6, 'ggggggggbbbbbb','aaaaaaa')
   ]
+  toogleDetails(index){
+        this.quotes[index].showDescription = !this.quotes[index].showDescription;
+    }
+  
     constructor() { }
 
   ngOnInit() {

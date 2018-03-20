@@ -2,12 +2,13 @@
 <hr>
 <div class="container">
 
+  <app-quote-form></app-quote-form>
   <div class="row" *ngFor='let quote of quotes;let i =index'>
     <div class="row">
+
       <h4 id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h4>
       <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
     </div>
-
 
     <div class="row">
       <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>

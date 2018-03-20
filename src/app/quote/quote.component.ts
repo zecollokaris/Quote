@@ -16,6 +16,17 @@ export class QuoteComponent implements OnInit {
     new quote(5, '1ffffffbbbbbb', 'aaaaaaaa', new Date(2018, 2, 20)),
     new quote(6, '1gggggggbbbbbb', 'aaaaaaa', new Date(2018, 2, 20))
   ]
+  deleteQuote(isComplete, index) {
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}`)
+
+      if (toDelete) {
+        this.quotes.splice(index, 1)
+      }
+    }
+  }
+
+
 
   completeQuote(isComplete, index) {
     if (isComplete) {

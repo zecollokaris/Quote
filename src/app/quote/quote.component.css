@@ -1,0 +1,13 @@
+.btn-primary {
+  margin-left: 7%;
+  background-color: #A3C966;
+}
+
+.btn-primary:hover {
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #666;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -webkit-transition: .5s;
+  opacity: .50;
+}

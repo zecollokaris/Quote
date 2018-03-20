@@ -9,12 +9,12 @@ import { quote } from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new quote(1, 'aaaaabbbbbb', 'aaaaaaa'),
-    new quote(2, 'cccccbbbbbb', 'aaaaaaa'),
-    new quote(3, 'ddddddabbbbbb', 'aaaaaaa'),
-    new quote(4, 'eeeeeeeabbbbbb', 'aaaaaaaa'),
-    new quote(5, 'fffffffbbbbbb', 'aaaaaaaa'),
-    new quote(6, 'ggggggggbbbbbb', 'aaaaaaa')
+    new quote(1, '1aaaaabbbbbb', 'aaaaaaa'),
+    new quote(2, '1cccccbbbbbb', 'aaaaaaa'),
+    new quote(3, '1ddddddabbbbbb', 'aaaaaaa'),
+    new quote(4, '1eeeeeeeabbbbbb', 'aaaaaaaa'),
+    new quote(5, '1ffffffbbbbbb', 'aaaaaaaa'),
+    new quote(6, '1gggggggbbbbbb', 'aaaaaaa')
   ]
 
   completeQuote(isComplete, index) {

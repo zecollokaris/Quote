@@ -16,3 +16,11 @@
 
 -from there you can access the work
 #{follow the above instructions for set up}
+
+#Description
+This is an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
+
+#Contact
+-Mobile number: (254) 798731203
+-Email Address: collo.kariss@gmail.com
+-github: zecollokaris

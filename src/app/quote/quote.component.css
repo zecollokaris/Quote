@@ -11,3 +11,7 @@
   -webkit-transition: .5s;
   opacity: .50;
 }
+
+.quotes {
+  font-family: 'Sue Ellen Francisco', cursive;
+}

@@ -17,8 +17,8 @@ export class QuoteComponent implements OnInit {
     new quote(6, ' If you can dream it, you can do it. ', ' —Walt Disney ', new Date(2018, 2, 20))
   ]
 
-  deleteQuote(isuser, index) {
-    if (isuser) {
+  deleteQuote(isComplete, index) {
+    if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].author}`)
 
       if (toDelete) {
@@ -41,7 +41,7 @@ export class QuoteComponent implements OnInit {
     }
   }
   toogleDetails(index) {
-    this.quotes[index].showquote = !this.quotes[index].showquote;
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
 
   constructor() { }

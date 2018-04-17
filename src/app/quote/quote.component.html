@@ -13,7 +13,6 @@
 
   <div class="row" *ngFor='let quote of quotes;let i =index'>
     <div class="row">
-
       <h4 id="{{i}}" appStrikethrough>{{quote.quote}} </h4>
       <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
       <h4 id="{{i}}" appStrikethrough>{{quote.author}} </h4>

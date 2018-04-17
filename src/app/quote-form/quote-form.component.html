@@ -1,6 +1,7 @@
 <!-- font links -->
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
 <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
 
 
@@ -15,7 +16,7 @@
         <div class="displaytext">
           <label form="author">Author</label>
 
-          <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required> Display {{newQuote.author}}
+          <input type="text" width="60" class="form1" id="author"  [(ngModel)]="newQuote.author" name="author" #author="ngModel" required> Display {{newQuote.author}}
 
           <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
             <p> Author is Required</p>
@@ -27,8 +28,7 @@
       <div class="form-group">
         <div class="displaytext">
           <label for="quote">Quote</label>
-          <textarea class="form-control" id="quote" rows="3" [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" required></textarea> Display {{newQuote.quote}}
-
+          <textarea class="form2" id="quote" rows="3" [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" required></textarea> Display {{newQuote.quote}}
           <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
             <p> Quote is Required</p>
           </div>
@@ -37,7 +37,6 @@
 
       <!--Submited by  -->
       <div class="form-group">
-
         <div class="displaytext">
           <label for="user">Date:</label>
           <input type='date' id="user" [(ngModel)]="newQuote.userDate" name="userDate" #userDate="ngModel" required>
@@ -47,7 +46,6 @@
         </div>
       </div>
       <button id="addquote" type="Submit" class="btn btn-success btn-lg">Add Quote</button>
-
     </form>
   </div>
 </div>

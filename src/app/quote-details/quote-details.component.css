@@ -1,6 +1,7 @@
 .btn-danger {
   font-size: 10px;
   padding: 3px 7px;
+  margin-left: 5%;
 }
 
 .btn-danger:hover {

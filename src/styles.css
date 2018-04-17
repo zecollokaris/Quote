@@ -5,3 +5,20 @@
   margin: 0px 0px 0px 30px;
   padding: 0px 16px 0px 15px;
 }
+
+
+html {
+  height: 100%;
+  background-image: url("assets/images/road.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+body {
+  width: 80%;
+  position: absolute;
+  background-image: url("assets/images/tower.jpg");
+  margin-left: 7%;
+  margin-top: 7%
+}

@@ -16,9 +16,8 @@ html {
 
 
 body {
-  width: 80%;
+  width: 87%;
   position: absolute;
   background-image: url("assets/images/tower.jpg");
-  margin-left: 7%;
-  margin-top: 7%
+  margin-left: 4%;
 }

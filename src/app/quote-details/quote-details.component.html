@@ -2,5 +2,14 @@
     <p>{{quote.quote}}</p>
     <p>This quote was submitted {{quote.userDate|dateCount}} days ago.</p>
     <button class="btn btn-danger" (click)='quoteDelete(true)'> Delete Quote </button>
-    <button class="btn btn-danger" (click)='quoteDelete(true)'> Upvote </button>
-    <button class="btn btn-danger" (click)='quoteDelete(true)'> Downvote </button>
+    
+    <button class=" btn btn-info" (click)='voteUp()' type="submit">
+        <span class="glyphicon glyphicon-thumbs-u" aria-hidden="true"></span>
+    
+        <span class="badge">{{upvote}} Likes</span>
+    </button>
+    
+    <button (click)='voteDown()' class="btn btn-info" type="submit">
+    
+        <span class="badge">{{downvote}} Dislikes</span>
+    </button>
